@@ -10,15 +10,7 @@ import {body, validationResult} from 'express-validator'
 //! criando constante para usar as rotas
 const router = express.Router()
 
-//! usando get na rota principal
-// router.get('/', (req, res) => {
 
-//   res.status(200).json({message:
-//     "Silêncio muleire, num sou maix brazalairo, sou ungolano, purquie, independientemiente di comu estivuer sua voida, seija felis, SURAYA"})
-// })
-
-//! usando post na rota principal
-//!yarn add express-validator
 router.post('/', [
   body("email").isEmail().withMessage("Email informado é invalido.")
 ], async (req, res) => {
