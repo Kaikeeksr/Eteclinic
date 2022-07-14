@@ -12,7 +12,7 @@ const app = express()
 app.use(express.json())
 
 //! ativando as rotas na routes.js
-app.use('/', routes)//(req, res) => res.send("<h1 style='text-align:center';>Página home</h1>"))
+app.use('/', routes)
 
 //! abrindo a ports 3333 no servidor
 app.listen(3333, () => {console.log("Server running ✅")})
